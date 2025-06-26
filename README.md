@@ -21,3 +21,22 @@ samples, guidance on mobile development, and a full API reference.
   
   🔚 Bottom line:
         barrel.dart always should be in the same folder where the exported files live. That keeps structure clean and logical.
+
+# 🔹 components Folder:
+  components folder-e reusable UI widgets thake, ja onno onno screen, page, or widget theke repeatable vabe use kora jai.
+
+   lib/
+└── components/
+    ├── buttons/
+    │   ├── primary_button.dart
+    │   └── icon_button.dart
+    ├── text_fields/
+    │   └── custom_text_field.dart
+    ├── dialogs/
+    │   └── confirm_dialog.dart
+    ├── cards/
+    │   └── product_card.dart
+    ├── images/
+    │   └── network_image_with_placeholder.dart
+    └── app_bar/
+        └── custom_app_bar.dart
