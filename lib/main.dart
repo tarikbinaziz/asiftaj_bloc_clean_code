@@ -3,7 +3,7 @@ import 'package:asiftaj_bloc_clean_code/config/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
