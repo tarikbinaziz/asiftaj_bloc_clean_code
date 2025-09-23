@@ -40,3 +40,8 @@ samples, guidance on mobile development, and a full API reference.
     │   └── network_image_with_placeholder.dart
     └── app_bar/
         └── custom_app_bar.dart
+
+
+# code generation
+dart run build_runner build
+flutter pub run build_runner build --delete-conflicting-outputs
