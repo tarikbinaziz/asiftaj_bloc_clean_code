@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 /// Reusable Button Widget
 class CustomButton extends StatelessWidget {
   final String text;
+  Function()? onPressed;
 
-  const CustomButton({super.key, required this.text});
+   CustomButton({super.key, required this.text, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -17,12 +18,7 @@ class CustomButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
         ),
-        onPressed: () {
-          // TODO: add login logic
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text("Login pressed")),
-          );
-        },
+        onPressed:onPressed,
         child: Text(text, style: const TextStyle(fontSize: 16)),
       ),
     );
